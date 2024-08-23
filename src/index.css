@@ -10,6 +10,7 @@
   /* Primary */
   
   --orange: hsl(25, 97%, 53%);
+  --faded-orange: hsl(25, 94%, 68%);
   
   /* Neutral */
   
@@ -127,6 +128,22 @@ button {
 
 .submit:hover {
   background-color: var(--white);
+}
+
+.submit:disabled {
+  background-color: var(--faded-orange);
+  color: var(--lighter-dark-blue);
+  cursor: not-allowed;
+}
+
+button {
+  transition: all .25s ease-in-out;
+  
+}
+
+button:hover {
+  transition: all .25s ease-in-out;
+
 }
 
 .resultContainer {

@@ -6,7 +6,7 @@ function Rating(param) {
     const [rating, setRating] = useState(null);
 
     function handleButtonClick(value) {
-        setRating(value);
+        setRating((deselect) => (deselect === value ? null : value));
     }
 
     function handleSubmit() {
