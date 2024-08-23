@@ -1,10 +1,11 @@
 import PropTypes from "prop-types";
+import Phone from "./Phone";
 
 function Result(param) {
     return (
         <div className="resultContainer">
             <div className="phone">
-                <img src="./src/assets/illustration-thank-you.svg" alt="#" />
+                <Phone />
             </div>
             <div className="orangePContainer">
                 <p className="orangeP">You selected {param.rating} out of 5</p>{" "}

@@ -1,5 +1,6 @@
 import { useState } from "react";
 import PropTypes from "prop-types";
+import Star from "./Star";
 
 function Rating(param) {
     const [rating, setRating] = useState(null);
@@ -18,7 +19,7 @@ function Rating(param) {
         <div className="ratingContainer">
             <div className="textArea">
                 <div className="star">
-                    <img src="./src/assets/icon-star.svg" alt="#" />
+                    <Star />
                 </div>
                 <h1 className="ratingH1">How did we do?</h1>
                 <p className="ratingP">
